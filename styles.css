@@ -15,11 +15,11 @@ header{
 
 }
 
-.searchandbasket {
+.menu_search-basket {
 width: 20px;
 height: 18px;
 }
-.basket {
+.menu_basket {
     margin-right: 28px;
     margin-left: 35px;
 }
@@ -28,35 +28,35 @@ a {
     color: #151c22;
     display: inline-block;
     }
-.site-card{
+.main-banner{
 background-color: #F1F2F4; 
 display: flex;
 flex-direction: row;
 justify-content: space-around;
 }
-.site-card-text{
+.main-banner_item{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-.site-card_photo{
+.main-banner_photo{
     display: inline-block;
     
 
     
 }
-.site-card_tagline {
+.main-banner_tagline {
     color: #727A82;
     font-family: "Work Sans";
     font-size: 18px;
 }
-.site-card_text-logo {
+.main-banner_text-logo {
     font-size: 128px;
     font-family: "Anton";
     text-transform: uppercase;
 
 }
-.site-card_button{
+.main-banner_button{
     background: #151C22;
     color: #FFFFFF;
     font-size: 16px;
@@ -64,7 +64,7 @@ justify-content: space-around;
     width: 219px;
     height: 64px;
 }
-.site-card_photo_item{
+.main-banner_photo_item{
     width: 490px;
     height: 577,33px;
 }
