@@ -1,38 +1,56 @@
-html body{
-    font-size: 100%;
+@font-face {
+    font-family: Anton-Regular;
+    src: url('Anton-Regular.ttf');
 }
-body{
+@font-face {
+    font-family: Work-Sans;
+    src: url('WorkSans-VariableFont_wght.ttf');
+}
+
+html body {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+body {
     padding: 0;
     margin: 0;
+    background-color: E5E5E5;
 }
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #e5e5e5;
+    background-color: E5E5E5;
 }
-.menu {
+
+.menu_section {
     font-size: 16px;
-    font-family: work-sans;
-    margin-left: 98px;
- 
+    font-family: Work Sans;
+    font-weight: bold;
+    padding-left: 35px;
+}
+.menu_section:nth-child(1) {
+    padding-left: 98px;
 }
 
-nav {
-    display: flex;
-    font-size: 16px;
+.menu-logo {
+    width: 75px;
+    height: 17px;
+    padding: 25px;
 }
 
-.menu__search-basket {
-width: 20px;
-height: 18px;
-
+.menu_search {
+    width: 18px;
+    height: 18px;
+    padding: 24px;
+    padding-right: 35px;
 }
-
-.menu__basket {
-    margin-right: 28px;
-    margin-left: 35px;
-
+.menu_basket {
+    width: 20px;
+    height: 18px;
+    padding: 24px;
+    padding-left: 0;
+    padding-right: 98px;
 }
 
 a {
@@ -55,50 +73,48 @@ a {
     justify-content: center;
 }
 
-   
-}
 .main-banner__tagline {
     color: #727A82;
-    font-family: work-sans;
     font-size: 18px;
+    line-height: 21px;
+    margin: 0;
 }
 .main-banner__title {
+    font-family: Anton-Regular;
     font-size: 128px;
-    font-family: Anton;
     text-transform: uppercase;
     margin: 0;
-
+    
 }
-h2{
-    font-family: work-sans;
+h2 {
+    font-family: Work-Sans;
     font-size: 32px;
     font-weight: bold;
-
 }
 h3 {
-    font-family: work-sans;
+    font-family: Work-Sans;
     font-size: 24px;
 }
 p {
-    font-family: work-sans;
+    font-family: Work-Sans;
 }
 button {
     background: #151C22;
     color: #FFFFFF;
     font-size: 16px;
-    font-family: work-sans;
+    font-family: Work-Sans;
     width: 219px;
     height: 64px;
 }
 
 .button-secondary {
-    font-family: work-sans;
+    font-family: Work-Sans;
     font-size: 18px;
     text-decoration: underline;
     background: none;
     color: #151C22;
     border: none;
-    width: 63px;
+    width: 70px;
     padding: 0px;
 }
 
@@ -116,17 +132,18 @@ button {
 .nav-arrow{
     display: flex;
     flex-direction: column-reverse;
+    
 }
 .block_button-position{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
 .block_news {
     display: flex;
     flex-direction: row;
     justify-content: ;
-    
 }
 .news-block-image{
     width: 700px;
@@ -154,14 +171,38 @@ block_news_data {
 }
 
 footer {
-    background-color: ;
+   background-color: black;
    display: flex;
    flex-direction: column;
+   align-items: center;
+   padding: 50px;
+   margin: 0;
 }
 .brand-name {
-    color: ;
+    color: #FFFFFF;
     font-size: 24px;
     font-weight: bolder;
-    font-family: work-sans;
+    font-family: Work-Sans;
     align-items: center;
+}
+.footer_menu-items {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: Work-Sans;
+    padding-left: 35px;
+}
+.footer_menu-shop {
+    padding-left: 0px;
+}
+
+.footer_menu {
+    list-style: none;
+    display: flex;
+}
+
+.fotter_social {
+    padding-right: 30px;
+}
+.fotter_social:nth-child(4) {
+    padding-right: 0;
 }
