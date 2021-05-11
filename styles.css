@@ -62,7 +62,6 @@ body {
     justify-content: space-between;
     background-color: E5E5E5;
     padding-bottom: 25px;
-    min-width: 1170px;
 }
 .block-center {
     display: flex;
@@ -72,7 +71,6 @@ body {
     background-color: #F1F2F4;
     
 }
-
 .menu {
     padding-top: 32px;
 }
@@ -81,7 +79,7 @@ body {
     padding-left: 35px;
 }
 .menu__items:first-child {
-        padding-left: 0;
+    padding-left: 0;
 }
 
 .menu-logo {
@@ -100,12 +98,9 @@ body {
     width: 20px;
     height: 18px;
 }
-
-
 .main-banner {
     display: flex;
     justify-content: space-between;
-    min-width: 1170px;
     align-items: center;
 }
 
@@ -126,11 +121,10 @@ body {
     font-size: 128px;
     text-transform: uppercase;
     margin: 0;
-    
 }
-
 .main-banner__image {
-    width: 490px;
+    width: 530px;
+    height: 613px;
     display: inline-block;
     background: url(Logo/diagonal.png);
     background-size: 232px 176px;
