@@ -147,7 +147,6 @@ body {
 }
 .block-button-secondary-position {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 .min-width {
@@ -199,12 +198,12 @@ block-news__data {
 }
 
 footer {
-    background-color: black;
+    background-color: #151C22;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    min-width: 100%;
+    width: 100%;
     height: 222px;
 }
 .brand-name {
