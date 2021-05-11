@@ -32,8 +32,8 @@ button {
     background: #151C22;
     color: #FFFFFF;
     font-size: 16px;
-    width: 219px;
-    height: 64px;
+    min-width: 219px;
+    min-height: 64px;
 }
 
 .button-secondary {
@@ -42,7 +42,7 @@ button {
     background: none;
     color: #151C22;
     border: none;
-    width: 70px;
+    min-width: 70px;
     padding: 0px;
 }
 
@@ -61,7 +61,6 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: E5E5E5;
-    padding-top: 0;
     padding-bottom: 25px;
     min-width: 1170px;
 }
@@ -69,20 +68,20 @@ body {
     display: flex;
     justify-content: center;
 }
-.block-background-grey {
+.background-grey {
     background-color: #F1F2F4;
-    height: 617px;
+    
 }
 
 .menu {
     padding-top: 32px;
 }
-.menu__section {
+.menu__items {
     font-size: 16px;
     padding-left: 35px;
 }
-.menu__section:first-child {
-    padding-left: 0;
+.menu__items:first-child {
+        padding-left: 0;
 }
 
 .menu-logo {
@@ -224,7 +223,7 @@ footer {
     font-size: 18px;
     padding-left: 35px;
 }
-.footer-menu-shop {
+.footer-menu__shop {
     padding-left: 0;
 }
 
