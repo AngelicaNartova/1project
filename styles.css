@@ -91,17 +91,16 @@ body {
 .menu-search {
     width: 18px;
     height: 18px;
-    padding-right: 35px;
     padding-top: 24px;
 }
 .menu-basket {
     width: 20px;
     height: 18px;
+    padding-left: 35px;
 }
 .main-banner {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .main-banner__description {
@@ -142,7 +141,9 @@ body {
 .button-navigate {
     display: flex;
     flex-direction: column-reverse;
-    height: 547.33px;
+    align-items: flex-end;
+    margin-bottom: 35px;
+    
 }
 .block-button-secondary-position {
     display: flex;
