@@ -122,28 +122,37 @@ body {
     margin: 0;
 }
 .main-banner__image {
-    width: 530px;
-    height: 613px;
+    width: 430px;
+    height: 517px;
     display: inline-block;
-    background: url(Logo/diagonal.png);
-    background-size: 232px 176px;
-    background-repeat: no-repeat;
-    background-position: left top;
+    padding: 48px;
+    position: relative;
+    z-index: 2;
 }
-.main-banner__background {
-    background: url(Logo/diagonal2.png);
-    background-repeat: no-repeat;
-    background-size: 232px 176px;
-    background-position: right bottom;
+.main-banner__block-image {
+    position: relative;
 }
-
-
+.main-banner__block-image::before {
+    display: inline-block;
+    content: url('Logo/diagonal.svg');
+    position: absolute;
+    width: 232px;
+    height: 176px;
+}
+.main-banner__block-image::after {
+    display: inline-block;
+    content: url('Logo/diagonal2.svg');
+    position: absolute;
+    bottom: 0;
+    right: 0%;
+    width: 232px;
+    height: 176px;
+    }
 .button-navigate {
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-end;
     margin-bottom: 35px;
-    
 }
 .block-button-secondary-position {
     display: flex;
@@ -189,7 +198,7 @@ block-news__data {
     margin-bottom: 34px;
 }
 .block-news__background {
-    background-image: url(Logo/background-diagonal.png);
+    background-image: url(Logo/background-diagonal.svg);
 }
 
 .price {
