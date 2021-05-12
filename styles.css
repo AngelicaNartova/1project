@@ -38,12 +38,19 @@ button {
 
 .button-secondary {
     font-size: 18px;
-    text-decoration: underline;
     background: none;
     color: #151C22;
     border: none;
     min-width: 70px;
     padding: 0px;
+    position: relative;
+}
+.button-secondary::after {
+    display: inline-block;
+    content: url('Logo/Line.svg');
+    position: absolute;
+    left: 0;
+    bottom: 8px;
 }
 
 body {
