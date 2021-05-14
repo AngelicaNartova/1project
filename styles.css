@@ -1,4 +1,4 @@
-@font-face {
+﻿@font-face {
     font-family: Anton-Regular;
     src: url('Anton-Regular.ttf');
 }
@@ -248,3 +248,86 @@ footer {
 .fotter-social:nth-child(4) {
     padding-right: 0;
 }
+
+/*Catalog layout page*/
+
+.block-main {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+.block-main_description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.block-main_image_description {
+    width: 299px;
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
+    z-index: 2;
+    margin: 0;
+}
+.block-main_image {
+    position: relative;
+    padding-left: 57px;
+    margin: 0;
+    height: 260px;
+}
+.block-main_image::before {
+    display: inline-block;
+    content: url('2page/diagonal1.svg');
+    position: absolute;
+    bottom: 0;
+    width: 178px;
+    height: 135px;
+}
+.block-main_image::after {
+    display: inline-block;
+    content: url('2page/diagonal2.svg');
+    position: absolute;
+    right: 0%;
+    width: 232px;
+    height: 176px;
+}
+.block-main_title {
+    font-size: 32px;
+    padding-top: 39px;
+    margin: 0;
+    font-weight: bold;
+    font-stretch: ultra-expanded;
+}
+.block-main__items {
+    font-size: 18px;
+    color: #727A82;
+}
+.block-main__items:hover {
+    color: #151C22;
+    font-weight: bold;
+}
+.block-main__items-Jackets {
+    color: #151C22;
+    font-weight: bold;
+}
+/*i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+.arrow-down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+ul {
+    list-style: none;
+    min-width: 243px;
+    min-height: 50px;
+    padding: 0;
+    font-weight: bold;
+    border: 2px solid #151C22;
+}*/
+
+
