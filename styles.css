@@ -8,10 +8,11 @@
 }
 
 html body {
-    font-size: 100%;
     box-sizing: border-box;
 }
-
+h1 {
+    margin: 0;
+}
 h2 {
     font-size: 32px;
     font-weight: bold;
@@ -26,7 +27,9 @@ a {
     color: #151c22;
     display: inline-block;
 }
-
+p {
+    margin: 0;
+}
 
 button {
     background: #151C22;
@@ -69,6 +72,7 @@ body {
     justify-content: space-between;
     background-color: E5E5E5;
     padding-bottom: 25px;
+    padding-top: 25px;
 }
 .block-center {
     display: flex;
@@ -78,27 +82,22 @@ body {
     background-color: #F1F2F4;
     
 }
-.menu {
-    padding-top: 32px;
-}
-.menu__items {
+.menu__item {
     font-size: 16px;
     padding-left: 35px;
 }
-.menu__items:first-child {
+.menu__item:first-child {
     padding-left: 0;
 }
 
 .menu-logo {
     width: 75px;
     height: 17px;
-    padding-top: 25px;
 }
 
 .menu-search {
     width: 18px;
     height: 18px;
-    padding-top: 24px;
 }
 .menu-basket {
     width: 20px;
@@ -120,13 +119,11 @@ body {
     color: #727A82;
     font-size: 18px;
     line-height: 21px;
-    margin: 0;
 }
 .main-banner__title {
     font-family: Anton-Regular;
     font-size: 128px;
     text-transform: uppercase;
-    margin: 0;
 }
 .main-banner__image {
     width: 430px;
@@ -135,6 +132,7 @@ body {
     padding: 48px;
     position: relative;
     z-index: 2;
+    object-fit: cover;
 }
 .main-banner__block-image {
     position: relative;
@@ -161,7 +159,7 @@ body {
     align-items: flex-end;
     margin-bottom: 35px;
 }
-.block-button-secondary-position {
+.button-position {
     display: flex;
     justify-content: space-between;
 }
@@ -171,12 +169,13 @@ body {
 .cards{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 70px;
 }
 
 .block-news {
     display: flex;
-    margin-top: 71px;
+    margin-top: 7px;
 }
 .block-news__image{
     width: 700px;
@@ -189,7 +188,7 @@ body {
     height: 104px;
     
 }
-block-news__data {
+block-news__date {
     width: 110px;
     height: 21px;
     
@@ -228,15 +227,11 @@ footer {
     font-weight: bolder;
     align-items: center;
 }
-.footer-menu__items {
+.footer-menu__item {
     color: #FFFFFF;
     font-size: 18px;
-    padding-left: 35px;
+    padding-right: 35px;
 }
-.footer-menu__shop {
-    padding-left: 0;
-}
-
 .footer-menu {
     list-style: none;
     display: flex;
@@ -245,9 +240,7 @@ footer {
 .fotter-social {
     padding-right: 30px;
 }
-.fotter-social:nth-child(4) {
-    padding-right: 0;
-}
+
 
 /*Catalog layout page*/
 
@@ -295,19 +288,18 @@ footer {
 .block-main__title {
     font-size: 32px;
     padding-top: 39px;
-    margin: 0;
     font-weight: bold;
     font-stretch: ultra-expanded;
 }
-.block-main__items {
+.block-main__item {
     font-size: 18px;
     color: #727A82;
 }
-.block-main__items:hover {
+.block-main__item:hover {
     color: #151C22;
     font-weight: bold;
 }
-.block-main__items-Jackets {
+.block-main__item-Jackets {
     color: #151C22;
     font-weight: bold;
 }
